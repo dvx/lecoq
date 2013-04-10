@@ -23,6 +23,7 @@ public class Lecoq extends Controller {
 							ObjectNode result = Json.newObject();
 							result.put("status", "OK");
 							result.put("type", response.getHeader(CONTENT_TYPE));
+							response().setHeader("Access-Control-Allow-Origin", "*");
 							return ok(result);
 						}
 					}));
