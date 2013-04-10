@@ -17,13 +17,13 @@ public class Lecoq extends Controller {
 
 	public static Result service(String url) {
 		try {
+			response().setHeader("Access-Control-Allow-Origin", "*");
 			return async(WS.url(url).head()
 					.map(new Function<WS.Response, Result>() {
 						public Result apply(WS.Response response) {
 							ObjectNode result = Json.newObject();
 							result.put("status", "OK");
 							result.put("type", response.getHeader(CONTENT_TYPE));
-							response().setHeader("Access-Control-Allow-Origin", "*");
 							return ok(result);
 						}
 					}));
