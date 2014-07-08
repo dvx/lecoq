@@ -1,4 +1,3 @@
-This is your new Play 2.0 application
-=====================================
-
-This file will be packaged with your application, when using `play dist`.
+Lecoq
+---
+Lecoq is an easy-to-use MIME-type checker built by David Titarenco on top of the Play Framework. Feel free to fork, contribute, or report issues!
