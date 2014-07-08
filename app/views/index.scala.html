@@ -81,8 +81,14 @@ hr {
           <pre style="background-color: transparent; border: none"><code class="ok">{
   "status":"OK",
   "type":"text/html; charset=ISO-8859-1"
-}</code></pre>  
-		  The error state returns a response which will look like so:
+}</code></pre> 
+		  Or, in the case of an image:
+		  <br>
+          <pre style="background-color: transparent; border: none"><code class="ok">{
+  "status":"OK",
+  "type":"image/jpeg"
+}</code></pre> 		  
+		  MIME-type checking is valuable as we don't need to download a file in its entirety to verify its type. The error state returns a response which will look like so:
 		  <br>
           <pre style="background-color: transparent; border: none"><code class="ko">{
   "status":"KO",
