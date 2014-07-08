@@ -34,7 +34,7 @@ public class Lecoq extends Controller {
 					}
 				);
 
-	        // for that CORS goodness
+			// for that CORS goodness
 			Context.current().response().setHeader("Access-Control-Allow-Origin", "*");
 
 			// don't waste server resources, 5 seconds to reach your destination
