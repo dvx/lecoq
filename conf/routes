@@ -4,6 +4,8 @@
 
 # Home page
 GET     /                          				controllers.Lecoq.index()
+GET		/c/										controllers.Lecoq.index()
+GET		/c										controllers.Lecoq.index()
 GET     /c/*url                           		controllers.Lecoq.service(url: String)
 
 # Map static resources from the /public folder to the /assets URL path
